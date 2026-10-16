@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codero Academy - Portal Berita Sekolah</title>
+    <meta name="description" content="Portal informasi resmi SMP Codero Academy — berita, agenda, dan prestasi murid.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <span class="pulse-dot"></span>
+        <span><strong>Kabar Terbaru:</strong> Pendaftaran Siswa Baru 2026/2027 Resmi Dibuka!</span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="mainHeader">
+        <a href="#beranda" class="logo">
+            <div class="logo-icon">🎓</div>
+            <div><span class="logo-title">Codero</span><span class="logo-badge">ACADEMY</span></div>
+        </a>
+        <nav class="nav">
+            <a href="#beranda" class="nav-link active">Beranda</a>
+            <a href="#berita" class="nav-link">Berita</a>
+            <a href="#agenda" class="nav-link">Agenda</a>
+            <a href="#kontak" class="nav-link">Kontak</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#beranda" class="mobile-link">Beranda</a>
+        <a href="#berita" class="mobile-link">Berita</a>
+        <a href="#agenda" class="mobile-link">Agenda</a>
+        <a href="#kontak" class="mobile-link">Kontak</a>
+    </div>
+
+    <!-- HERO BANNER -->
+    <section class="banner" id="beranda">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <span class="hero-badge">✨ Portal Resmi Sekolah Teknologi & Inovasi</span>
+            <h1>Membentuk Generasi Cerdas, Unggul & Berkarakter Digital</h1>
+            <p>Pusat informasi kegiatan belajar, prestasi murid, dan berita terkini Codero Academy.</p>
+            <div class="hero-buttons">
+                <a href="#berita" class="btn btn-primary">Lihat Berita Terbaru →</a>
+                <a href="#agenda" class="btn btn-glass">📅 Agenda Kegiatan</a>
+            </div>
+        </div>
+        <!-- STATS -->
+        <div class="stats-grid">
+            <div class="stat-card"><span class="stat-num">1.250+</span><span class="stat-lbl">Siswa Berprestasi</span></div>
+            <div class="stat-card"><span class="stat-num">48+</span><span class="stat-lbl">Medali Nasional</span></div>
+            <div class="stat-card"><span class="stat-num">100%</span><span class="stat-lbl">Lab Komputer & IoT</span></div>
+            <div class="stat-card"><span class="stat-num">A</span><span class="stat-lbl">Akreditasi BAN-S/M</span></div>
+        </div>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container">
+
+        <!-- BERITA -->
+        <section class="section" id="berita">
+            <span class="section-tag">Kabar Terkini</span>
+            <h2 class="section-title">Berita & Informasi Sekolah</h2>
+            <p class="section-desc">Ikuti perkembangan terbaru dan prestasi gemilang murid Codero Academy.</p>
+
+            <!-- Filter -->
+            <div class="filter-bar">
+                <button class="filter-pill active" data-filter="all">Semua</button>
+                <button class="filter-pill" data-filter="prestasi">🏆 Prestasi</button>
+                <button class="filter-pill" data-filter="akademik">📚 Akademik</button>
+                <button class="filter-pill" data-filter="kegiatan">🎯 Kegiatan</button>
+            </div>
+
+            <div class="news-grid" id="newsGrid">
+                <!-- Berita 1 -->
+                <article class="card" data-kategori="prestasi" data-id="1">
+                    <div class="card-img"><img src="assets/news-stem.jpg" alt="Lomba Robotik" loading="lazy"><span class="badge prestasi">Prestasi</span></div>
+                    <div class="card-body">
+                        <p class="card-date">📅 14 Oktober 2026</p>
+                        <h3>Juara 1 Lomba Robotik Nasional 2026</h3>
+                        <p class="card-summary">Tim robotik murid Codero meraih medali emas dengan inovasi robot cerdas pemantau lingkungan.</p>
+                        <div class="card-footer">
+                            <span class="author"><span class="avatar">HC</span> Humas Codero</span>
+                            <button class="read-btn" data-target="1">Baca →</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Berita 2 -->
+                <article class="card" data-kategori="akademik" data-id="2">
+                    <div class="card-img"><img src="assets/news-library.jpg" alt="Perpustakaan Digital" loading="lazy"><span class="badge akademik">Akademik</span></div>
+                    <div class="card-body">
+                        <p class="card-date">📅 12 Oktober 2026</p>
+                        <h3>Perpustakaan Digital Baru Resmi Dibuka</h3>
+                        <p class="card-summary">Ribuan e-book, jurnal sains, dan modul coding interaktif kini dapat diakses dari gawai apa pun.</p>
+                        <div class="card-footer">
+                            <span class="author"><span class="avatar">PL</span> Pustakawan</span>
+                            <button class="read-btn" data-target="2">Baca →</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Berita 3 -->
+                <article class="card" data-kategori="kegiatan" data-id="3">
+                    <div class="card-img"><img src="assets/news-coding.jpg" alt="Pekan Coding" loading="lazy"><span class="badge kegiatan">Kegiatan</span></div>
+                    <div class="card-body">
+                        <p class="card-date">📅 10 Oktober 2026</p>
+                        <h3>Pekan Kreativitas dan Coding Bersama</h3>
+                        <p class="card-summary">Ratusan murid membuat website dan game edukatif dalam festival kolaborasi antarkelas.</p>
+                        <div class="card-footer">
+                            <span class="author"><span class="avatar">OS</span> Pembina OSIS</span>
+                            <button class="read-btn" data-target="3">Baca →</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="empty-state" id="emptyState" style="display:none">
+                <p>🔍 Tidak ada berita yang cocok.</p>
+                <button class="btn btn-outline" id="resetBtn">Tampilkan Semua</button>
+            </div>
+        </section>
+
+        <!-- AGENDA -->
+        <section class="section" id="agenda">
+            <span class="section-tag">Jadwal Kalender</span>
+            <h2 class="section-title">Agenda Mendatang</h2>
+            <p class="section-desc">Catat dan ikuti rangkaian agenda kegiatan belajar penting.</p>
+
+            <div class="agenda-list">
+                <div class="agenda-card">
+                    <div class="date-box"><span class="d-day">20</span><span class="d-mon">OKT</span></div>
+                    <div class="agenda-info">
+                        <span class="agenda-badge soon">Segera</span>
+                        <h4>Ujian Praktik Pembuatan Web</h4>
+                        <p>📍 Lab Komputer Gedung B · 08.00 WIB</p>
+                    </div>
+                </div>
+                <div class="agenda-card">
+                    <div class="date-box"><span class="d-day">28</span><span class="d-mon">OKT</span></div>
+                    <div class="agenda-info">
+                        <span class="agenda-badge event">Pameran</span>
+                        <h4>Pameran Karya Game & Website Siswa</h4>
+                        <p>📍 Aula Ki Hajar Dewantara · 09.00 WIB</p>
+                    </div>
+                </div>
+                <div class="agenda-card">
+                    <div class="date-box"><span class="d-day">05</span><span class="d-mon">NOV</span></div>
+                    <div class="agenda-info">
+                        <span class="agenda-badge open">Workshop</span>
+                        <h4>Workshop Coding Dasar untuk Pemula</h4>
+                        <p>📍 Kelas Hybrid & Zoom · 10.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section class="section" id="kontak">
+            <span class="section-tag">Hubungi Kami</span>
+            <h2 class="section-title center">Layanan Informasi & Kontak</h2>
+
+            <div class="contact-grid">
+                <div class="contact-card"><div class="c-icon">📍</div><h4>Lokasi</h4><p>Jl. Pendidikan No. 88, Jakarta Selatan</p></div>
+                <div class="contact-card"><div class="c-icon">📞</div><h4>Telepon</h4><p>(021) 7890-1234</p></div>
+                <div class="contact-card"><div class="c-icon">✉️</div><h4>Email</h4><p>info@coderoacademy.sch.id</p></div>
+            </div>
+
+            <div class="form-box">
+                <h3>Kirimkan Pertanyaan</h3>
+                <form id="contactForm" onsubmit="handleContact(event)">
+                    <div class="form-row">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <textarea rows="3" placeholder="Pesan atau pertanyaan Anda..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan ✉️</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="newsModal">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast-box" id="toastBox"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <strong>🎓 Codero Academy</strong>
+                <p>Sekolah menengah pertama berbasis kurikulum teknologi, coding, sains, dan karakter digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="#beranda">Beranda</a><a href="#berita">Berita</a><a href="#agenda">Agenda</a><a href="#kontak">Kontak</a>
+            </div>
+            <div class="footer-links">
+                <h4>Sosial Media</h4>
+                <a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SMP Codero Academy. Hak Cipta Dilindungi.</p>
+            <button class="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Ke Atas</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
